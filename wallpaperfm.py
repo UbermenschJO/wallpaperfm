@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 # Wallpaperfm.py is a python script that generates desktop wallpapers from your last.fm music profile.
 # by Koant, http://www.last.fm/user/Koant
 # ./wallpaper.py will display the instructions
@@ -24,9 +24,9 @@ import os.path
 import sys
 from getopt import getopt
 import random
-import Image
-import ImageDraw
-import ImageFilter
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFilter
 
 def usage():
 	print "Quick examples"
